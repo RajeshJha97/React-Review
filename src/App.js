@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { FiAlertOctagon } from 'react-icons/fi';
+import Review from './component/Review';
+import datas from './data';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='flex flex-col justify-center items-center overflow-y-auto h-full'>
+      <div className='mt-40'>
+        <h1 className='text-3xl'>Our Reviews</h1>
+      </div>
+      <div>
+        <div className='bg-blue-500 h-1 w-[120px]'></div>
+      </div>
+      <Review datas={datas} />
     </div>
   );
 }
